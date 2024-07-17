@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var waveText = prompt("Please enter your text");
+    if(waveText.length<10){
+        alert("please enter your word more than 10 ")
+    }else
+        var result = []
+        for(i=0;i<waveText.length;i++){
+            tempArray = waveText.split('');
+            tempArray[i]=tempArray[i].toUpperCase();
+            result.push(tempArray.join(''));
+        }
+        document.write(result);
+        </script>
+</body>
+</html>

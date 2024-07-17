@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function basket(costomer_ID, list_ID, product_ID,product_amount)
+{
+    this.costomer_ID = costomer_ID;
+    this.list_ID = list_ID;
+    this.product_ID = product_ID;
+    this.product_amount = product_amount;
+
+    function show()
+    {
+        console.log("รหัสลูกค้า " +costomer_ID + " - ลำดับรายการ "+ list_ID + " - รหัสสินค้า " +product_ID+", จำนวนสินค้า = "+product_amount+" ชิ้น");
+    }
+
+    return show();
+    
+}
+
+var costomer1 = new basket("58", "1", "41", "23");
+var costomer2 = new basket("58", "2", "68", "17");
+var costomer3 = new basket("58", "3", "25", "2");
+    </script>
+</body>
+</html>

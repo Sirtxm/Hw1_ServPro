@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Color Code Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resistor Color Code Calculator</h1>
+        <form id="resistorForm">
+            <div>
+                <label for="band1">แถบสีที่ 1:</label>
+                <select id="band1" required>
+                    <option value="" disabled selected>เลือกสี</option>
+                    <option value="0">ดำ (Black)</option>
+                    <option value="1">น้ำตาล (Brown)</option>
+                    <option value="2">แดง (Red)</option>
+                    <option value="3">ส้ม (Orange)</option>
+                    <option value="4">เหลือง (Yellow)</option>
+                    <option value="5">เขียว (Green)</option>
+                    <option value="6">ฟ้า (Blue)</option>
+                    <option value="7">ม่วง (Violet)</option>
+                    <option value="8">เทา (Grey)</option>
+                    <option value="9">ขาว (White)</option>
+                </select>
+            </div>
+            <div>
+                <label for="band2">แถบสีที่ 2:</label>
+                <select id="band2" required>
+                    <option value="" disabled selected>เลือกสี</option>
+                    <option value="0">ดำ (Black)</option>
+                    <option value="1">น้ำตาล (Brown)</option>
+                    <option value="2">แดง (Red)</option>
+                    <option value="3">ส้ม (Orange)</option>
+                    <option value="4">เหลือง (Yellow)</option>
+                    <option value="5">เขียว (Green)</option>
+                    <option value="6">ฟ้า (Blue)</option>
+                    <option value="7">ม่วง (Violet)</option>
+                    <option value="8">เทา (Grey)</option>
+                    <option value="9">ขาว (White)</option>
+                </select>
+            </div>
+            <div>
+                <label for="multiplier">แถบสีที่ 3 (ตัวคูณ):</label>
+                <select id="multiplier" required>
+                    <option value="" disabled selected>เลือกสี</option>
+                    <option value="1">ดำ (Black)</option>
+                    <option value="10">น้ำตาล (Brown)</option>
+                    <option value="100">แดง (Red)</option>
+                    <option value="1000">ส้ม (Orange)</option>
+                    <option value="10000">เหลือง (Yellow)</option>
+                    <option value="100000">เขียว (Green)</option>
+                    <option value="1000000">ฟ้า (Blue)</option>
+                    <option value="10000000">ม่วง (Violet)</option>
+                    <option value="0.1">ทอง (Gold)</option>
+                    <option value="0.01">เงิน (Silver)</option>
+                </select>
+            </div>
+            <div>
+                <label for="tolerance">แถบสีที่ 4 (ค่าความคลาดเคลื่อน):</label>
+                <select id="tolerance" required>
+                    <option value="" disabled selected>เลือกสี</option>
+                    <option value="1">น้ำตาล (Brown) ±1%</option>
+                    <option value="2">แดง (Red) ±2%</option>
+                    <option value="5">ทอง (Gold) ±5%</option>
+                    <option value="10">เงิน (Silver) ±10%</option>
+                </select>
+            </div>
+            <button type="button" onclick="calculateResistance()">คำนวณ</button>
+        </form>
+        <div id="result">
+            <h2>ค่าความต้านทาน:</h2>
+            <p id="resistanceValue">- Ω</p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

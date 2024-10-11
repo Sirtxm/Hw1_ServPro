@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="showdata.php" method="post">
+        <h1>Membership Application Form</h1>
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Surname:</label>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="education">Highest Degree of Graduated:</label>
+        <select id="education" name="education">
+            <option value="vocational">Vocational Certificate</option>
+            <option value="high_vocational">High Vocational Certificate</option>
+            <option value="bachelor">Bachelor Degree</option>
+            <option value="master">Master or Higher</option>
+        </select><br>
+
+        <label for="business">Business Type:</label>
+        <input type="text" id="business" name="business" required><br>
+
+        <label for="position">Job Position:</label>
+        <input type="text" id="position" name="position" required><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
